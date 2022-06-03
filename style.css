@@ -1,0 +1,6 @@
+.form__container{
+    max-width: 500px !important;
+}
+.form__header{
+    width: fit-content;
+}

@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPA - RIMS Issue Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="form__container">
+    <div class="form__container container-sm p-3">
+      <h4 class="display-6 form__header mx-auto">RIMS Issues Form</h4>
       <form action="" method="post" class="form__body">
         <!-- Port -->
-        <label for="port" class="label port--label">Port:</label>
-        <select name="port" id="" class="port--dropdown" aria-required="true">
-          <option value="0">Select Port</option>
+        <label for="port" class="form-label label port--label mt-2"
+          >Port:</label
+        >
+        <select
+          name="port"
+          id=""
+          class="form-select form-select port--dropdown"
+          aria-required="true"
+        >
+          <option selected>Select Port</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
@@ -24,39 +38,54 @@
         </select>
 
         <!-- SEN No -->
-        <label for="SEN Number" class="label sen-number--label">SEN No:</label>
+        <label for="SEN Number" class="form-label label sen-number--label mt-3"
+          >SEN No:</label
+        >
         <input
           type="text"
           name="sen-number"
           id=""
-          class="sen-number--field"
+          class="sen-number--field form-control"
           aria-required="true"
         />
 
         <!-- Status -->
-        <label for="Status" class="label status--label">Status:</label>
+        <label for="Status" class="form-label label status--label mt-3"
+          >Status:</label
+        >
         <input
           type="text"
           name="status"
           id=""
-          class="status--field"
+          class="status--field form-control"
           aria-required="true"
         />
 
         <!-- Issues -->
-        <label for="Issues" class="label issues--label">Issues:</label>
+        <label for="Issues" class="form-label label issues--label mt-3"
+          >Issues:</label
+        >
         <textarea
           name="issues"
+          class="form-control"
           id=""
-          cols="25"
-          rows="5"
+          rows="4"
           wrap="hard"
           aria-required="true"
         ></textarea>
 
         <!-- Submit Button -->
-        <button type="submit">Submit</button>
+        <input
+          class="btn btn-success btn-lg form-control mt-5"
+          type="submit"
+          value="Submit"
+        />
       </form>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
