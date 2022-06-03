@@ -4,8 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NPA || RIMS Issue Form</title>
+    <title>NPA - RIMS Issue Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form__container">
+      <form action="" method="post" class="form__body">
+        <!-- Port -->
+        <label for="port" class="label port--label">Port:</label>
+        <select name="port" id="" class="port--dropdown" aria-required="true">
+          <option value="0">Select Port</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+          <option value="6">Six</option>
+          <option value="7">Seven</option>
+        </select>
+
+        <!-- SEN No -->
+        <label for="SEN Number" class="label sen-number--label">SEN No:</label>
+        <input
+          type="text"
+          name="sen-number"
+          id=""
+          class="sen-number--field"
+          aria-required="true"
+        />
+
+        <!-- Status -->
+        <label for="Status" class="label status--label">Status:</label>
+        <input
+          type="text"
+          name="status"
+          id=""
+          class="status--field"
+          aria-required="true"
+        />
+
+        <!-- Issues -->
+        <label for="Issues" class="label issues--label">Issues:</label>
+        <textarea
+          name="issues"
+          id=""
+          cols="25"
+          rows="5"
+          wrap="hard"
+          aria-required="true"
+        ></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
