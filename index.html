@@ -13,9 +13,10 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
     <div class="form__container container-sm p-3">
-      <h4 class="display-6 form__header mx-auto">RIMS Issues Form</h4>
+      <h6 class="display-6 form__header mx-auto">RIMS Issues Form</h6>
       <form action="issues-form-process.php" method="post" class="form__body">
         <!-- Port -->
         <label for="port" class="form-label label port--label mt-2"
@@ -25,16 +26,16 @@
           name="port"
           id=""
           class="form-select form-select port--dropdown"
-          aria-required="true"
+          required
         >
           <option selected>Select Port</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-          <option value="6">Six</option>
-          <option value="7">Seven</option>
+          <option value="Port One">Port One</option>
+          <option value="Port Two">Port Two</option>
+          <option value="Port Three">Port Three</option>
+          <option value="Port Four">Port Four</option>
+          <option value="Port Five">Port Five</option>
+          <option value="Port Six">Port Six</option>
+          <option value="Port Seven">Port Seven</option>
         </select>
 
         <!-- SEN No -->
@@ -46,20 +47,24 @@
           name="sen-number"
           id=""
           class="sen-number--field form-control"
-          aria-required="true"
+          required
         />
 
         <!-- Status -->
         <label for="status" class="form-label label status--label mt-3"
           >Status:</label
         >
-        <input
-          type="text"
+
+        <select
           name="status"
           id=""
-          class="status--field form-control"
-          aria-required="true"
-        />
+          class="form-select form-select port--dropdown"
+          required
+        >
+          <option selected>Select Status</option>
+          <option value="Pending">Pending</option>
+          <option value="Resolved">Resolved</option>
+        </select>
 
         <!-- Issues -->
         <label for="issues" class="form-label label issues--label mt-3"
@@ -71,7 +76,7 @@
           id=""
           rows="4"
           wrap="hard"
-          aria-required="true"
+          required
         ></textarea>
 
         <!-- Submit Button -->
@@ -88,4 +93,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <footer>Made by d3vd3511gn + Ini['oluwa'] + Rildwan for SA&DM</footer>
 </html>

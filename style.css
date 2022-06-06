@@ -1,6 +1,14 @@
-.form__container{
-    max-width: 500px !important;
+body {
+  background-color: #f7f7f7 !important;
 }
-.form__header{
-    width: fit-content;
+.form__container {
+  max-width: 500px !important;
+}
+
+.form__header {
+  width: fit-content;
+}
+
+footer {
+  display: none;
 }

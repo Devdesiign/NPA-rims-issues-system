@@ -1,6 +1,6 @@
 <?php
 
-$port = filter_input(INPUT_POST, "port", FILTER_VALIDATE_INT); //Integer
+$port = $_POST["port"]; //Integer
 $sen_number = $_POST["sen-number"]; //String
 $status = $_POST["status"]; //String
 $issues = $_POST["issues"]; //String
@@ -40,7 +40,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 //Binding the values to Placeholders
 mysqli_stmt_bind_param(
     $stmt,
-    "isss",
+    "ssss",
     $port,
     $sen_number,
     $status,
