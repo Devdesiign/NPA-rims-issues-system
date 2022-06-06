@@ -49,4 +49,4 @@ mysqli_stmt_bind_param(
 
 mysqli_stmt_execute($stmt);
 
-echo "<h5>The issue has been captured successfully!</h6>";
+echo "<h3>The issue has been captured successfully!</h3>";

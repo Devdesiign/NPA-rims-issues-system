@@ -1,7 +1,7 @@
 <?php
 
-$username = $_POST["username"]; //String
-$password = $_POST["password"]; //String
+$user_name = $_POST["username"]; //String
+$user_password = $_POST["password"]; //String
 $port = $_POST["port"]; //String
 
 if (!$username) {
@@ -40,12 +40,11 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 mysqli_stmt_bind_param(
     $stmt,
     "sss",
-    $username,
-    $password,
+    $user_name,
+    $user_password,
     $port
 );
 
 mysqli_stmt_execute($stmt);
 
-echo "<h5> User Created Successfully</h5>
-<p>Please Proceed to Login</p>";
+echo "<h3> User Created Successfully</h3><p>Please Proceed to Login</p>";
