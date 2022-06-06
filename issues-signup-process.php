@@ -4,7 +4,7 @@ $user_name = $_POST["username"]; //String
 $user_password = $_POST["password"]; //String
 $port = $_POST["port"]; //String
 
-if (!$username) {
+if (!$user_name) {
     die("Username is empty");
 }
 
