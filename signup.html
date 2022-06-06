@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RIMS Issue Login- NPA</title>
+    <title>RIMS Issue Signup - NPA</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,8 +16,8 @@
 
   <body>
     <div class="form__container container-sm p-3">
-      <h6 class="display-6 form__header mx-auto">RIMS Issues Login</h6>
-      <form action="issues-form-process.php" method="post" class="form__body">
+      <h6 class="display-6 form__header mx-auto">RIMS Issues Signup</h6>
+      <form action="issues-signup-process.php" method="post" class="form__body">
         <!-- Username -->
         <label for="username" class="form-label label username--label mt-3"
           >Email:
@@ -38,22 +38,42 @@
           type="password"
           name="password"
           id=""
-          class="password--field form-control mb-3"
+          class="password--field form-control"
           required
         />
 
+        <!-- Port -->
+        <label for="port" class="form-label label port--label mt-3"
+          >Port:</label
+        >
+        <select
+          name="port"
+          id=""
+          class="form-select form-select port--dropdown mb-3"
+          required
+        >
+          <option selected>Select Port</option>
+          <option value="Port One">Port One</option>
+          <option value="Port Two">Port Two</option>
+          <option value="Port Three">Port Three</option>
+          <option value="Port Four">Port Four</option>
+          <option value="Port Five">Port Five</option>
+          <option value="Port Six">Port Six</option>
+          <option value="Port Seven">Port Seven</option>
+        </select>
+
         <!-- New User - Sign Up -->
         <p class="text-start">
-          <a href="signup.html" class="link-dark text-center"
-            >New User? Signup Here!</a
+          <a href="index.html" class="link-dark text-center"
+            >Have an Account? Login Here!</a
           >
         </p>
 
-        <!-- Login Button -->
+        <!-- Submit Button -->
         <input
           class="btn btn-success btn-lg form-control mt-5"
           type="submit"
-          value="Login"
+          value="Sign Up"
         />
       </form>
     </div>

@@ -1,12 +1,11 @@
 <?php
 
+$username = $_POST["username"]; //String
+$password = $_POST["password"]; //String
 $port = $_POST["port"]; //String
-$sen_number = $_POST["sen-number"]; //String
-$status = $_POST["status"]; //String
-$issues = $_POST["issues"]; //String
 
-if (!$issues) {
-    die("Issue is empty");
+if (!$username) {
+    die("Username is empty");
 }
 
 //Connection Details
@@ -29,7 +28,7 @@ if (mysqli_connect_errno()) {
 
 //Inserting to DB
 
-$sql = "INSERT INTO issues (port, sen_number, status, issues) VALUES (?, ?, ?, ?)"; //Quetion marks are placeholders
+$sql = "INSERT INTO credentials (username, password, port) VALUES (?, ?, ?)"; //Quetion marks are placeholders
 
 $stmt = mysqli_stmt_init($conn);
 
@@ -40,13 +39,13 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 //Binding the values to Placeholders
 mysqli_stmt_bind_param(
     $stmt,
-    "ssss",
-    $port,
-    $sen_number,
-    $status,
-    $issues
+    "sss",
+    $username,
+    $password,
+    $port
 );
 
 mysqli_stmt_execute($stmt);
 
-echo "<h5>The issue has been captured successfully!</h6>";
+echo "<h5> User Created Successfully</h5>
+<p>Please Proceed to Login</p>";
