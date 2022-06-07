@@ -5,14 +5,18 @@ require 'connection.php';
 
 $user_name = $_POST["username"]; //String
 $user_password = $_POST["password"]; //String
-$port;
-$access;
-$sql = "SELECT * FROM credentials WHERE username = '$user_name' and password = '$user_password'";
-$result = mysqli_query($conn, $sql);
-$count = mysqli_num_rows($result);
 
-if ($count > 0) {
+//SQL Declarations
+$sql1 = "SELECT * FROM credentials WHERE username = '$user_name' and password = '$user_password' and access = 'Authorized User'";
+
+
+$result1 = mysqli_query($conn, $sql1);
+$count1 = mysqli_num_rows($result1);
+
+
+
+if ($count1 > 0) {
     echo "Login";
 } else {
-    echo "Nonsense";
+    echo "NOT Login";
 }

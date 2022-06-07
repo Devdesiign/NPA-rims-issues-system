@@ -34,4 +34,4 @@ mysqli_stmt_bind_param(
 
 mysqli_stmt_execute($stmt);
 
-echo "<h3> User Created Successfully</h3><p>Please Proceed to Login</p>";
+readfile("index.html");
