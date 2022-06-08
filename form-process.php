@@ -8,8 +8,11 @@ $sen_number = $_POST["sen-number"]; //String
 $status = $_POST["status"]; //String
 $issues = $_POST["issues"]; //String
 
-if (!$issues) {
+if ($issues = "") {
     die("Issue is empty");
+}
+if ($status == "Select Status") {
+    die("Invalid Status");
 }
 
 //Inserting to DB

@@ -16,8 +16,8 @@
 
   <body>
     <div class="form__container container-sm p-3">
-      <h6 class="display-6 form__header mx-auto">RIMS Issues Signup</h6>
-      <form action="issues-signup-process.php" method="post" class="form__body">
+      <h6 class="display-6 form__header mx-auto">Sign Up - RIMS Issues</h6>
+      <form action="signup-process.php" method="post" class="form__body">
         <!-- Username -->
         <label for="username" class="form-label label username--label mt-3"
           >Email:
@@ -48,18 +48,18 @@
         >
         <select
           name="port"
-          id=""
+          id="port"
           class="form-select form-select port--dropdown mb-3"
           required
         >
-          <option selected>Select Port</option>
-          <option value="Port One">Port One</option>
-          <option value="Port Two">Port Two</option>
-          <option value="Port Three">Port Three</option>
-          <option value="Port Four">Port Four</option>
-          <option value="Port Five">Port Five</option>
-          <option value="Port Six">Port Six</option>
-          <option value="Port Seven">Port Seven</option>
+          <option value="">Select Port</option>
+          <option value="NPA HQ" id="port">NPA HQ, Marina</option>
+          <option value="Lagos Port" id="port">Lagos Port</option>
+          <option value="Tin-Can Port" id="port">Tin-Can Port</option>
+          <option value="Rivers Port" id="port">Rivers Port</option>
+          <option value="Onne Port" id="port">Onne Port</option>
+          <option value="Delta Port" id="port">Delta Port</option>
+          <option value="Calabar Port" id="port">Calabar Port</option>
         </select>
 
         <!-- New User - Sign Up -->

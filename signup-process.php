@@ -8,8 +8,8 @@ $user_password = $_POST["password"]; //String
 $port = $_POST["port"]; //String
 $access = "New User";
 
-if (!$user_name) {
-    die("Username is empty");
+if ($port == "Select Port") {
+    die("Invalid Port");
 }
 
 //Inserting to DB
