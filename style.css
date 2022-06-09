@@ -4,7 +4,9 @@ body {
 .form__container {
   max-width: 500px !important;
 }
-
+.container {
+  max-width: 600px !important;
+}
 .form__header {
   width: fit-content;
 }

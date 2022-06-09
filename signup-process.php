@@ -6,7 +6,7 @@ require 'connection.php';
 $user_name = $_POST["username"]; //String
 $user_password = $_POST["password"]; //String
 $port = $_POST["port"]; //String
-$access = "New User";
+$access = 0;
 
 if ($port == "Select Port") {
     die("Invalid Port");
@@ -25,7 +25,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 //Binding the values to Placeholders
 mysqli_stmt_bind_param(
     $stmt,
-    "ssss",
+    "sssi",
     $user_name,
     $user_password,
     $port,
@@ -35,3 +35,5 @@ mysqli_stmt_bind_param(
 mysqli_stmt_execute($stmt);
 
 readfile("index.php");
+
+mysqli_close($conn);

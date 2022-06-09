@@ -38,3 +38,5 @@ mysqli_stmt_bind_param(
 mysqli_stmt_execute($stmt);
 
 echo "<h3>The issue has been captured successfully!</h3>";
+
+mysqli_close($conn);
