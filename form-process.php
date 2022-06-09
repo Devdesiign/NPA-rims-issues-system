@@ -6,9 +6,9 @@ require 'connection.php';
 $port = $_POST["port"]; //String
 $sen_number = $_POST["sen-number"]; //String
 $status = $_POST["status"]; //String
-$issues = $_POST["issues"]; //String
+$issue = $_POST["issue"]; //String
 
-if ($issues = "") {
+if ($issue == "") {
     die("Issue is empty");
 }
 if ($status == "Select Status") {
@@ -17,7 +17,7 @@ if ($status == "Select Status") {
 
 //Inserting to DB
 
-$sql = "INSERT INTO issues (port, sen_number, status, issues) VALUES (?, ?, ?, ?)"; //Quetion marks are placeholders
+$sql = "INSERT INTO issues (port, sen_number, status, issue) VALUES (?, ?, ?, ?)"; //Quetion marks are placeholders
 
 $stmt = mysqli_stmt_init($conn);
 
@@ -32,11 +32,11 @@ mysqli_stmt_bind_param(
     $port,
     $sen_number,
     $status,
-    $issues
+    $issue
 );
 
 mysqli_stmt_execute($stmt);
 
-echo "<h3>The issue has been captured successfully!</h3>";
+readfile("dashboard.php");
 
 mysqli_close($conn);

@@ -66,14 +66,14 @@
           <option value="Resolved" id="status">Resolved</option>
         </select>
 
-        <!-- Issues -->
-        <label for="issues" class="form-label label issues--label mt-3"
-          >Issues:</label
+        <!-- Issue -->
+        <label for="issue" class="form-label label issue--label mt-3" id="issue"
+          >Issue:</label
         >
         <textarea
-          name="issues"
+          name="issue"
           class="form-control"
-          id=""
+          id="issue"
           rows="4"
           wrap="hard"
           required

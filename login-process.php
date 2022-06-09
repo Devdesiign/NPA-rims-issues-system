@@ -15,7 +15,7 @@ if ($count > 0) {
     if ($row['access'] == 0) {
         readfile("authorization-warning.php");
     } else {
-        echo "old";
+        readfile("dashboard.php");
     }
 } else {
     readfile("credentials-warning.php");
