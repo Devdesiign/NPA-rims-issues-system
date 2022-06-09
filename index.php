@@ -44,7 +44,7 @@
 
         <!-- New User - Sign Up -->
         <p class="text-start">
-          <a href="signup.html" class="link-dark text-center"
+          <a href="signup.php" class="link-dark text-center"
             >New User? Signup Here!</a
           >
         </p>

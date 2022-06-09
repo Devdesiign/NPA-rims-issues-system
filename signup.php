@@ -64,7 +64,7 @@
 
         <!-- New User - Sign Up -->
         <p class="text-start">
-          <a href="index.html" class="link-dark text-center"
+          <a href="index.php" class="link-dark text-center"
             >Have an Account? Login Here!</a
           >
         </p>

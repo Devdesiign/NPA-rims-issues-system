@@ -34,4 +34,4 @@ mysqli_stmt_bind_param(
 
 mysqli_stmt_execute($stmt);
 
-readfile("index.html");
+readfile("index.php");
