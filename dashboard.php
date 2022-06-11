@@ -17,9 +17,10 @@ $sec = "15";
 
 <body>
   <div class="table-responsive mx-auto" style="max-width: 95vw !important;">
-    <h6 class="display-6 text-center mt-2">Issues</h6>
+    <h6 class="display-6 text-center">Issues</h6>
     <p class="text-end">
-      <a href="form.php" class="btn btn-outline-success">Add New Issues</a>
+      <a href="credentials.php" class="btn btn-outline-success inactive">Credentials</a>
+      <a href="form.php" class="btn btn-dark text-end">Add New Issues</a>
     </p>
     <table class="table table-striped table-bordered table-hover text-center align-middle">
       <thead>
@@ -47,8 +48,8 @@ $sec = "15";
             <td><?php echo $row['status']; ?></td>
             <td><?php echo $row['issue']; ?></td>
             <td>
-                <a href="" class="btn btn-success">Edit</a>
-                <a href="" class="btn btn-danger">Delete</a>
+              <a class="btn btn-success" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+              <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
             </td>
           </tr>
 

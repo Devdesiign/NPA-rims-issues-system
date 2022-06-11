@@ -17,7 +17,10 @@ $sec = "15";
 
 <body>
     <div class="table-responsive mx-auto" style="max-width: 95vw !important;">
-        <h6 class="display-6 text-center mt-2 mb-3">Credentials</h6>
+        <h6 class="display-6 text-center">Credentials</h6>
+        <p class="text-end">
+            <a href="dashboard.php" class="btn btn-outline-success inactive">Issues</a>
+        </p>
         <table class="table table-striped table-bordered table-hover text-center align-middle">
             <thead>
                 <tr>
@@ -44,8 +47,8 @@ $sec = "15";
                         <td><?php echo $row['port']; ?></td>
                         <td><?php echo $row['access']; ?></td>
                         <td>
-                            <a href="" class="btn btn-success">Edit</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a class="btn btn-success" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+                            <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
                         </td>
                     </tr>
 
