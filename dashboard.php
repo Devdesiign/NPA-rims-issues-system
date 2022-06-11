@@ -19,7 +19,7 @@ $sec = "15";
   <div class="table-responsive mx-auto" style="max-width: 95vw !important;">
     <h6 class="display-6 text-center mt-2">Issues</h6>
     <p class="text-end">
-      <a href="form.php" class="btn btn-success">Add New Issues</a>
+      <a href="form.php" class="btn btn-outline-success">Add New Issues</a>
     </p>
     <table class="table table-striped table-bordered table-hover text-center align-middle">
       <thead>
