@@ -15,7 +15,11 @@ if ($count > 0) {
     if ($row['access'] == 0) {
         readfile("authorization-warning.php");
     } else {
-        readfile("dashboard.php");
+?>
+        <script>
+            location.replace("dashboard.php");
+        </script>
+<?php
     }
 } else {
     readfile("credentials-warning.php");
@@ -24,3 +28,4 @@ if ($count > 0) {
 mysqli_free_result($result);
 
 mysqli_close($conn);
+?>

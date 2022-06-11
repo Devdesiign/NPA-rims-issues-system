@@ -19,7 +19,7 @@
       <h6 class="display-6 form__header mx-auto">Form - RIMS Issues</h6>
       <form action="form-process.php" method="post" class="form__body">
         <!-- Port -->
-        <label for="port" class="form-label label port--label mt-3"
+        <label for="port" class="form-label label port--label mt-3" id="port"
           >Port:</label
         >
         <select
@@ -39,19 +39,19 @@
         </select>
 
         <!-- SEN No -->
-        <label for="sen-number" class="form-label label sen-number--label mt-3"
+        <label for="sen-number" class="form-label label sen-number--label mt-3" id="sen-number"
           >SEN No:</label
         >
         <input
           type="text"
           name="sen-number"
-          id=""
+          id="sen-number"
           class="sen-number--field form-control"
           required
         />
 
         <!-- Status -->
-        <label for="status" class="form-label label status--label mt-3"
+        <label for="status" class="form-label label status--label mt-3" id="status"
           >Status:</label
         >
 

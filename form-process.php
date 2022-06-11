@@ -36,7 +36,11 @@ mysqli_stmt_bind_param(
 );
 
 mysqli_stmt_execute($stmt);
+?>
 
-readfile("dashboard.php");
-
+<script>
+    location.replace("dashboard.php");
+</script>
+<?php
 mysqli_close($conn);
+?>

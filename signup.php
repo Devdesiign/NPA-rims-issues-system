@@ -19,31 +19,31 @@
       <h6 class="display-6 form__header mx-auto">Sign Up - RIMS Issues</h6>
       <form action="signup-process.php" method="post" class="form__body">
         <!-- Username -->
-        <label for="username" class="form-label label username--label mt-3"
+        <label for="username" class="form-label label username--label mt-3" id="username"
           >Email:
         </label>
         <input
           type="email"
           name="username"
-          id=""
+          id="username"
           class="username--field form-control"
           required
         />
 
         <!-- Password -->
-        <label for="password" class="form-label label password--label mt-3"
+        <label for="password" class="form-label label password--label mt-3" id="password"
           >Password:</label
         >
         <input
           type="password"
           name="password"
-          id=""
+          id="password"
           class="password--field form-control"
           required
         />
 
         <!-- Port -->
-        <label for="port" class="form-label label port--label mt-3"
+        <label for="port" class="form-label label port--label mt-3" id="port"
           >Port:</label
         >
         <select
