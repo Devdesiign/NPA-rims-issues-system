@@ -62,8 +62,8 @@
           required
         >
           <option value="">Select Status</option>
-          <option value="Pending" id="status">Pending</option>
-          <option value="Resolved" id="status">Resolved</option>
+          <option value="0" id="status">Pending</option>
+          <option value="1" id="status">Resolved</option>
         </select>
 
         <!-- Issue -->

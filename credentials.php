@@ -47,8 +47,8 @@ $sec = "15";
                         <td><?php echo $row['port']; ?></td>
                         <td><?php echo $row['access']; ?></td>
                         <td>
-                            <a class="btn btn-success" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
-                            <a class="btn btn-danger" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                            <a class="btn btn-success" href="edit-cred.php?id=<?php echo $row['id']; ?>">Edit</a>
+                            <a class="btn btn-danger" href="delete-cred.php?id=<?php echo $row['id']; ?>">Delete</a>
                         </td>
                     </tr>
 
