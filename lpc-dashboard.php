@@ -29,7 +29,7 @@ $sec = "15";
                     <th scope="col">SEN Number</th>
                     <th scope="col">Status</th>
                     <th scope="col">Issue</th>
-                    <th scope="col">Operations</th>
+                    <!-- <th scope="col">Operations</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -46,10 +46,10 @@ $sec = "15";
                         <td><?php echo $row['sen_number']; ?></td>
                         <td><?php echo $row['status']; ?></td>
                         <td><?php echo $row['issue']; ?></td>
-                        <td>
+                        <!-- <td>
                             <a class="btn btn-success" href="edit-issue.php?id=<?php echo $row['id']; ?>">Edit</a>
                             <a class="btn btn-danger" href="delete-issue.php?id=<?php echo $row['id']; ?>">Delete</a>
-                        </td>
+                        </td> -->
                     </tr>
 
                 <?php } ?>

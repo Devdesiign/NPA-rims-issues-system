@@ -64,7 +64,7 @@ if ($count > 0) {
                             break;
                         case $calabar:
             ?><script>
-                   location.replace("calabar-dashboard.php");
+                    location.replace("calabar-dashboard.php");
                 </script>
 <?php
                     }

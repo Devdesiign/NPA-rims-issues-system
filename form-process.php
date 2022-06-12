@@ -36,12 +36,63 @@ mysqli_stmt_bind_param(
 );
 
 mysqli_stmt_execute($stmt);
+
+$sql2 = "SELECT * FROM credentials";
+$result = mysqli_query($conn, $sql2);
+$row = mysqli_fetch_array($result);
+
+$hq = "NPA HQ";
+$lpc = "Lagos Port";
+$apapa = "Tin-Can Port";
+$rivers = "Rivers Port";
+$onne = "Onne Port";
+$delta = "Delta Port";
+$calabar = "Calabar Port";
+
+switch ($row['port']) {
+    case $hq:
 ?>
-
-<script>
-    location.replace("dashboard.php");
-</script>
-
+        <script>
+            location.replace("dashboard.php");
+        </script>
+    <?php
+        break;
+    case $lpc:
+    ?><script>
+            location.replace("lpc-dashboard.php");
+        </script>
+    <?php
+        break;
+    case $apapa: ?>
+        <script>
+            location.replace("apapa-dashboard.php");
+        </script>
+    <?php
+        break;
+    case $rivers:
+    ?><script>
+            location.replace("rivers-dashboard.php");
+        </script>
+    <?php
+        break;
+    case $onne:
+    ?>
+        <script>
+            location.replace("onne-dashboard.php");
+        </script>
+    <?php
+        break;
+    case $delta:
+    ?>
+        <script>
+            location.replace("delta-dashboard.php");
+        </script>
+    <?php
+        break;
+    case $calabar:
+    ?><script>
+            location.replace("calabar-dashboard.php");
+        </script>
 <?php
-mysqli_close($conn);
+}
 ?>
