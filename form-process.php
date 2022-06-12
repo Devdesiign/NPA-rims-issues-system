@@ -41,6 +41,7 @@ mysqli_stmt_execute($stmt);
 <script>
     location.replace("dashboard.php");
 </script>
+
 <?php
 mysqli_close($conn);
 ?>
