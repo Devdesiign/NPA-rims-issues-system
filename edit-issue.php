@@ -29,8 +29,8 @@ $row = mysqli_fetch_array($result);
 
             <select name="status" id="status" class="form-select form-select access--dropdown" required>
                 <option value="">Select Status</option>
-                <option value="0 <?php echo $row['status']; ?>" id="status">Pending</option>
-                <option value="1 <?php echo $row['status']; ?>" id="status">Resolved</option>
+                <option value="Pending" id="status">Pending</option>
+                <option value="Resolved" id="status">Resolved</option>
             </select>
             <input class="btn btn-success btn-lg form-control mt-4" type="submit" name="submit" value="Edit" />
         </form>

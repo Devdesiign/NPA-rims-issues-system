@@ -28,7 +28,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
 //Binding the values to Placeholders
 mysqli_stmt_bind_param(
     $stmt,
-    "ssis",
+    "ssss",
     $port,
     $sen_number,
     $status,
